@@ -1,32 +1,45 @@
 import React from 'react';
 import img1 from '../assets/brand_img.png'
-import { motion } from "motion/react"
+import { motion } from "framer-motion";
+
 function About() {
   return (
-    <motion.div initial={{ opacity: 0, x: -200 }}
-     whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.5 }}>
-    <div className='mt-[50px] text-center' id="About">
-    <div className='text-4xl'><b>About</b>     our Brand</div>
-    <div>Passinate  About Properties, Dedicated to<br/>Your Vision</div>
-    </div>
-    <div  className='flex justify-center gap-[50px] mt-[50px] mb-[200px]'>
-      <img src={img1} className='w-[500px]'></img>
-      <div className='grid grid-cols-2 gap-x-[100px] grid-rows-2 gap-y-[50px]  justify-center h-[200px] mt-[50px]'>
-        <div>
-          <p className='text-2xl'> <b>10+</b><br/>Years of Excellence</p>
+    <motion.div
+      initial={{ opacity: 0, x: -200 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      <div className="mt-12 text-center" id="About">
+        <div className="text-3xl md:text-4xl font-bold">
+          About <span className="font-normal">our Brand</span>
         </div>
-        <div>
-          <p className='text-2xl'> <b>12+</b><br/>Projects completed</p>
-        </div>
-        <div>
-          <p className='text-2xl'> <b>20+</b><br/>Mn.Sq.Ft.Delivered</p>
-        </div>
-        <div>
-          <p className='text-2xl'> <b>25+</b><br/>Ongoing Projects</p>
+        <div className="mt-2 text-sm md:text-base text-gray-600">
+          Passionate About Properties, Dedicated to<br />Your Vision
         </div>
       </div>
-    </div>
+
+      <div className="flex flex-col md:flex-row items-center justify-center gap-10 mt-12 mb-32 px-4">
+        <img
+          src={img1}
+          className="w-full max-w-xs md:max-w-md"
+          alt="Brand"
+        />
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-6 md:mt-0 text-center">
+          <div>
+            <p className="text-xl md:text-2xl font-semibold">10+<br /><span className="text-base font-normal">Years of Excellence</span></p>
+          </div>
+          <div>
+            <p className="text-xl md:text-2xl font-semibold">12+<br /><span className="text-base font-normal">Projects completed</span></p>
+          </div>
+          <div>
+            <p className="text-xl md:text-2xl font-semibold">20+<br /><span className="text-base font-normal">Mn.Sq.Ft. Delivered</span></p>
+          </div>
+          <div>
+            <p className="text-xl md:text-2xl font-semibold">25+<br /><span className="text-base font-normal">Ongoing Projects</span></p>
+          </div>
+        </div>
+      </div>
     </motion.div>
   );
 }

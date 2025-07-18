@@ -1,9 +1,16 @@
-import React from 'react'
+import React from 'react';
 import headerImg from "../assets/header_img.png";
 
 function Back() {
   return (
-    <img src={headerImg} alt="Header" className='w-full h-full object-cover top-0 left-0 z-[-1] opacity-100 transition-opacity duration-300 ease-in' />
+    <div className="relative w-full h-[400px] md:h-[600px] lg:h-[800px]">
+      <img
+        src={headerImg}
+        alt="Header"
+        className="w-full h-full object-cover absolute top-0 left-0 z-[-1] opacity-100 transition-opacity duration-300 ease-in"
+      />
+    </div>
   );
 }
-export default Back
+
+export default Back;
