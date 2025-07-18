@@ -13,7 +13,6 @@ It includes hero sections, featured listings, testimonials, and a clean, scroll-
 - 🖥️ **Responsive Design** — Optimized for all screen sizes
 - 🎯 **Smooth Scroll Navigation** — Click and glide to sections
 - 🧩 **Component-Based Architecture** — Clean separation of concerns
-- 🌙 **Dark Mode Ready** *(if added later)*
 - 🚀 **Fast & Lightweight** — Built with Vite + React
 
 🔗 Live Demo
